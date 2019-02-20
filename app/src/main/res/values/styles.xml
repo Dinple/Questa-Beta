@@ -1,0 +1,52 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:dividerHeight">3dp</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.picker" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:editTextStyle">@style/Widget.EditText.White</item>
+    </style>
+
+    <style name="Widget.EditText.White" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/boldi</item>
+    </style>
+
+    <style name="MyTestStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">"@font/boldi"</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CustomTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/courbd</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColorHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MyDatePickerSpinnerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:background">#dededf</item>
+        <item name="android:fontFamily">@font/cour</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+
+
+
+
+
+</resources>

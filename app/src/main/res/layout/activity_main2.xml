@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dededf"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:padding="5dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_welcome_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp">
+            <TextView
+                android:id="@+id/welcome_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="true"
+                android:fontFamily="@font/boldi"
+                android:text="welcome"
+                android:textSize="17sp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ic_currency_logo"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:paddingStart="5dp"
+                android:fontFamily="@font/courbd"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_hp_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_below="@+id/ll_welcome_title">
+
+            <TextView
+                android:id="@+id/tv_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HP"
+                android:paddingStart="0dp"
+                android:paddingEnd="8dp"
+                android:fontFamily="@font/boldi"
+                android:textSize="15sp"
+                android:textColor="@color/colorSecondary"
+                android:includeFontPadding="false" />
+
+            <ProgressBar
+                android:id="@+id/pb_health_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/custom_hp_bar"
+                android:layout_toEndOf="@id/tv_hp" />
+
+            <TextView
+                android:id="@+id/tv_hp_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:layout_toEndOf="@id/tv_hp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/boldi"
+                android:includeFontPadding="false"
+                android:paddingStart="5dp"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_xp_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_below="@+id/rl_hp_section">
+
+            <TextView
+                android:id="@+id/tv_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XP"
+                android:paddingStart="0dp"
+                android:paddingEnd="8dp"
+                android:fontFamily="@font/boldi"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:includeFontPadding="false" />
+
+            <ProgressBar
+                android:id="@+id/pb_exp_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/custom_xp_bar"
+                android:layout_toEndOf="@id/tv_exp" />
+
+            <TextView
+                android:id="@+id/tv_exp_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:layout_toEndOf="@id/tv_exp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/boldi"
+                android:includeFontPadding="false"
+                android:paddingStart="5dp"/>
+        </RelativeLayout>
+
+        <!--</RelativeLayout>-->
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_top_left"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_quest_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/courbd"
+                    android:includeFontPadding="false"
+                    android:paddingStart="5dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/courbd"
+                android:includeFontPadding="false"
+                android:text="quest"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/courbd"
+            android:includeFontPadding="false"
+            android:text="questa"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_top_right"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_level_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/courbd"
+                    android:includeFontPadding="false"
+                    android:paddingEnd="5dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/courbd"
+                android:includeFontPadding="false"
+                android:text="level"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/title_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+
+    <ScrollView
+        android:id="@+id/sv_quests_list"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <com.kris.questademo2.CustomExpandableListView
+                android:id="@+id/questsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:childDivider="#dededf"
+                android:divider="#dededf"
+                android:dividerHeight="1dp" />
+
+                <com.kris.questademo2.CustomExpandableListView
+                    android:id="@+id/lockedQuestsList"
+                    android:layout_below="@+id/questsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:childDivider="#dededf"
+                    android:divider="#dededf"
+                    android:dividerHeight="1dp" />
+
+
+            <Button
+                android:id="@+id/btn_previous_questa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lockedQuestsList"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/boldi"
+                android:outlineProvider="none"
+                android:text="Previous Questa"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <com.kris.questademo2.CustomExpandableListView
+                android:id="@+id/elv_previous_questa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_previous_questa"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:childDivider="#dededf"
+                android:divider="#dededf"
+                android:dividerHeight="1dp"
+                android:visibility="gone"
+
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_quests_list">
+
+
+        <Button
+            android:id="@+id/btn_store"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_store_logo" />
+
+        <Button
+            android:id="@+id/addQuest"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_add_button"/>
+
+        <Button
+            android:id="@+id/btn_option"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_option_logo" />
+        
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

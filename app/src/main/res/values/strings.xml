@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name"><b>Questa</b></string>
+    <string name="styled_text">Plain, <b>bold</b>, <i>italic</i>, <b><i>bold-italic</i></b></string>
+    <string name="slogan"><b>all work no play makes one dull</b></string>
+    <string name="delete_dial"><b>Quest will be abandoned!\nAre you sure?</b></string>
+    <string name="this_questa_will_be_recreated_are_you_sure">This Questa will be recreated.\n Are you sure?</string>
+    <string name="plus_health_potion_description">\"*slaps cap of the bottle* \nThis tiny bottle of potion can \nfit so much juicy blood in it\"</string>
+    <string name="small_health_potion_description">\"Why crack the big one when a \nsmall one does it better?\"</string>
+    <string name="challenge_description">\"I know you are low on money,\nbut another settlement\nneeds our help!\"</string>
+    <string name="store_title"><![CDATA[STORE]]></string>
+    <string name="revive">Revive (5000 coins)</string>
+    <string name="new_character">new character</string>
+    <string name="edit_name">EDIT NAME</string>
+    <string name="enter_your_name">ENTER YOUR NAME</string>
+    <string name="cancel">CANCEL</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="option">OPTION</string>
+    <string name="edit_your_name">EDIT YOUR NAME</string>
+    <string name="report_a_bug">REPORT A BUG</string>
+    <string name="edit">EDIT</string>
+    <string name="abandon">Abandon</string>
+    <string name="you_died">YOU DIED</string>
+    <string name="credit">CREDIT</string>
+    <string name="new_alarm">NEW ALARM</string>
+    <string name="due_alarm">DUE ALARM</string>
+    <string name="previousquesta">Previous Questa</string>
+    <string name="hidepreviousquesta">Hide Previous Questa</string>
+</resources>

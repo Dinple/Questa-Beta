@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/alert_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/boldi"
+            android:text="@string/delete_dial"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_abandon"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/abandon"
+            android:fontFamily="@font/boldi"
+            android:textAlignment="center"
+            android:elevation="10dp"
+
+            android:textColor="@color/alertColor" />
+
+        <Button
+            android:id="@+id/btn_editQ"
+            android:text="@string/edit"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/boldi"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:elevation="10dp"
+            android:nextFocusLeft="@id/btn_abandon"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
